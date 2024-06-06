@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
+@import url("./fonts/src/fonts/BrutalMilkNo3-Extrabold.otf");
+
+@layer base {
+  @font-face {
+    font-family: brutal;
+    src: local("BrutalMilkNo3-Extrabold"),
+      url(./fonts/src/fonts/BrutalMilkNo3-Extrabold.otf) format("opentype");
+  }
+}
+
+html {
+  font-family: Inter, sans-serif;
+  font-display: swap;
+}
