@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
 // import useFlickrApiHome from "./useFlickrApiHome";
 import useFlickrApiGallery from "./useFlickrApiGallery";
-
+import video from "./video/morfar.mp4";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
@@ -45,7 +45,7 @@ export default function Home() {
             loop
             height="100vh"
             preload="auto"
-            src="src\video\morfar.mp4"
+            src={video}
           ></VideoBg>
         </div>
       )}
