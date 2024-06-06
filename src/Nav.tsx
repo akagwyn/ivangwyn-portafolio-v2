@@ -153,7 +153,7 @@ function MobileMenu({ handleChangeMenu }: any) {
           <motion.li variants={item}>
             <Link to="/bici-nena">
               <p className="uppercase" onClick={() => handleChangeMenu()}>
-                Bici Nena
+                BiciNena
               </p>
             </Link>
           </motion.li>
@@ -240,7 +240,7 @@ function DesktopMenu({ handleChangeDesktopMenu }: any) {
         </Link>
         <Link to="/bici-nena">
           <p className="uppercase" onClick={() => handleChangeDesktopMenu()}>
-            Bici Nena
+            BiciNena
           </p>
         </Link>
         <Link to="/club-audiovisual">
