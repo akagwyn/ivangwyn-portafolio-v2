@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("./fonts/Inter-Regular.ttf");
 @import url("./fonts/BrutalMilkNo3-Extrabold.otf");
 
 @layer base {
@@ -10,9 +11,9 @@
     src: local("BrutalMilkNo3-Extrabold"),
       url(./fonts/BrutalMilkNo3-Extrabold.otf) format("opentype");
   }
-}
-
-html {
-  font-family: Inter, sans-serif;
-  font-display: swap;
+  @font-face {
+    font-family: inter;
+    src: local("Inter-Regular"),
+      url(./fonts/Inter-Regular.ttf) format("truetype");
+  }
 }
