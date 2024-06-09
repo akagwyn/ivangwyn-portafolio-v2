@@ -61,8 +61,8 @@ function InfoArtist({ artistId }: Artist) {
           ))}
         </div>
         <div className="flex flex-row items-center space-x-7 mb-6">
-          <div className="font-inter">
-            <p className="text-2xl font-extrabold">{artist?.followers.total}</p>
+          <div className="font-interBold font-extrabold">
+            <p className="text-2xl">{artist?.followers.total}</p>
             <p className="font-bold text-sm">seguidores</p>
           </div>
           <div className="flex flex-row space-x-3">

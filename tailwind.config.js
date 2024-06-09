@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     fontFamily: {
       brutal: ["brutal"],
-      inter: ["Inter", "sans-serif"],
+      inter: ["inter", "sans-serif"],
+      interBold: ["InterBold", "sans-serif"],
     },
   },
   plugins: [],

@@ -38,7 +38,7 @@ export default function Nav() {
     <header className="m-auto w-full">
       {isDesktop && (
         <div>
-          <ul className="fixed right-0 flex justify-end text-xl items-center py-5 px-5 mix-blend-difference">
+          <ul className="fixed right-0 flex justify-end text-xl items-center py-5 px-5 mix-blend-difference z-10">
             <li className="flex text-neutral-50">
               <button
                 className="px-2 uppercase"

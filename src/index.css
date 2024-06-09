@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @import url("./fonts/Inter-Regular.ttf");
+@import url("./fonts/Inter-SemiBold.ttf");
 @import url("./fonts/BrutalMilkNo3-Extrabold.otf");
 
 @layer base {
@@ -15,5 +15,9 @@
     font-family: inter;
     src: local("Inter-Regular"),
       url(./fonts/Inter-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: interBold;
+    src: local("Inter-SemiBold"), url(./fonts/Inter-Bold.ttf) format("truetype");
   }
 }

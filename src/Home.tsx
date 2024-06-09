@@ -1,7 +1,8 @@
 // import { Link } from "react-router-dom";
 // import useFlickrApiHome from "./useFlickrApiHome";
-import useFlickrApiGallery from "./useFlickrApiGallery";
-import video from "./video/morfar.mp4";
+// import useFlickrApiGallery from "./useFlickrApiGallery";
+import morfar from "./video/morfar.mp4";
+import horizontal from "./video/horizontal.mp4";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
@@ -26,7 +27,7 @@ export default function Home() {
     };
   }, []);
   return (
-    <main>
+    <main className=" overscroll-none">
       <h1 className="fixed left-0 top-0 py-4 px-4 text-5xl md:text-8xl tracking-tight mix-blend-difference">
         FOTOGRAFIA
       </h1>
@@ -36,7 +37,17 @@ export default function Home() {
       <h1 className="fixed right-0 bottom-0 py-4 px-4 text-5xl md:text-8xl tracking-tight mix-blend-difference">
         CONCIERTOS
       </h1>
-      {isDesktop && <Gallery albumId="72177720317685569" />}
+      {isDesktop && (
+        <div className="z-0 h-screen">
+          <VideoBg
+            muted
+            autoPlay
+            loop
+            preload="auto"
+            src={horizontal}
+          ></VideoBg>
+        </div>
+      )}
       {!isDesktop && (
         <div className="h-screen">
           <VideoBg
@@ -45,7 +56,7 @@ export default function Home() {
             loop
             height="100vh"
             preload="auto"
-            src={video}
+            src={morfar}
           ></VideoBg>
         </div>
       )}
@@ -53,23 +64,23 @@ export default function Home() {
   );
 }
 
-type FlickrGallery = { albumId: string };
+// type FlickrGallery = { albumId: string };
 
-function Gallery({ albumId }: FlickrGallery) {
-  const { photos } = useFlickrApiGallery({ albumId });
+// function Gallery({ albumId }: FlickrGallery) {
+//   const { photos } = useFlickrApiGallery({ albumId });
 
-  return (
-    <main className={`grid grid-cols-1 md:grid-cols-4`}>
-      {photos.map((photo, index) => (
-        <div className="" key={index}>
-          <img
-            className="h-full w-full object-cover"
-            loading="lazy"
-            src={`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_c.jpg`}
-            alt={photo.title}
-          />
-        </div>
-      ))}
-    </main>
-  );
-}
+//   return (
+//     <main className={`grid grid-cols-1 md:grid-cols-4`}>
+//       {photos.map((photo, index) => (
+//         <div className="" key={index}>
+//           <img
+//             className="h-full w-full object-cover"
+//             loading="lazy"
+//             src={`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_c.jpg`}
+//             alt={photo.title}
+//           />
+//         </div>
+//       ))}
+//     </main>
+//   );
+// }
