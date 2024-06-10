@@ -37,29 +37,10 @@ export default function Home() {
       <h1 className="fixed right-0 bottom-0 py-4 px-4 text-5xl md:text-8xl tracking-tight mix-blend-difference">
         CONCIERTOS
       </h1>
-      {isDesktop && (
-        <div className="z-0 h-screen">
-          <VideoBg
-            muted
-            autoPlay
-            loop
-            preload="auto"
-            src={horizontal}
-          ></VideoBg>
-        </div>
-      )}
-      {!isDesktop && (
-        <div className="h-screen">
-          <VideoBg
-            muted
-            autoPlay
-            loop
-            height="100vh"
-            preload="auto"
-            src={morfar}
-          ></VideoBg>
-        </div>
-      )}
+
+      <div className="z-0 h-screen">
+        <VideoBg muted autoPlay loop preload="auto" src={horizontal}></VideoBg>
+      </div>
     </main>
   );
 }
