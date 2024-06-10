@@ -1,9 +1,9 @@
 // import { Link } from "react-router-dom";
 // import useFlickrApiHome from "./useFlickrApiHome";
 // import useFlickrApiGallery from "./useFlickrApiGallery";
-import morfar from "./video/morfar.mp4";
+
 import horizontal from "./video/horizontal.mp4";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 export const VideoBg = styled.video`
@@ -14,18 +14,18 @@ export const VideoBg = styled.video`
 `;
 
 export default function Home() {
-  const [isDesktop, setIsDesktop] = useState<boolean>(window.innerWidth >= 768);
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
-    };
+  // const [isDesktop, setIsDesktop] = useState<boolean>(window.innerWidth >= 768);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsDesktop(window.innerWidth >= 768);
+  //   };
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
   return (
     <main className=" overscroll-none">
       <h1 className="fixed left-0 top-0 py-4 px-4 text-5xl md:text-8xl tracking-tight mix-blend-difference">
