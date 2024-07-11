@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./Nav";
 import "react-photo-view/dist/react-photo-view.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const Home = lazy(() => import("./Home"));
 const SashaEter = lazy(() => import("./Albums/SashaEter"));
@@ -47,7 +48,7 @@ export default function App() {
           />
         </Routes>
       </Suspense>
-
+      <Analytics />
       {/* <footer className="text-center py-5 text-xs font-light text-zinc-500">
         © Ivan Gwyn Hughes Copyright 2023
       </footer> */}
