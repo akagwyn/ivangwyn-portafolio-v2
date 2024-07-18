@@ -27,11 +27,11 @@ export default function Home() {
   //   };
   // }, []);
   return (
-    <main className=" overscroll-none">
+    <main className="overscroll-none">
       <h1 className="fixed left-0 top-0 py-4 px-4 text-5xl md:text-8xl tracking-tight mix-blend-difference">
         FOTOGRAFIA
       </h1>
-      <p className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl tracking-tight mix-blend-difference">
+      <p className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl text-center w-screen tracking-tight mix-blend-difference">
         IVAN GWYN
       </p>
       <h1 className="fixed right-0 bottom-0 py-4 px-4 text-5xl md:text-8xl tracking-tight mix-blend-difference">
